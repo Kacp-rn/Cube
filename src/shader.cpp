@@ -66,3 +66,8 @@ Shader::~Shader()
 {
     glDeleteProgram(Program_ID);
 }
+
+unsigned int Shader::getProgramID() const
+{
+    return Program_ID;
+}

@@ -30,7 +30,5 @@ class Shader
     void createProgram();
     void use();
     unsigned int getProgramID() const;
-
-    private:
     void setProgramID();
 };
