@@ -25,6 +25,11 @@ const char* Shader::ReadShader(const std::string& shader_path)
     return CompilingPath;
 }
 
+void Shader::setProgramID()
+{
+    this->Program_ID = glCreateProgram();
+}
+
 void Shader::VertexShaderCompile(const char* CompilingShaderSource)
 {
     VertexShader = glCreateShader(GL_VERTEX_SHADER);
