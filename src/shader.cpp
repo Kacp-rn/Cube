@@ -58,8 +58,8 @@ void Shader::use()
 {
     glUseProgram(Program_ID);
 
-    int vertexColorLocation = glGetUniformLocation(Program_ID, "ourColor");
-    glUniform4f(vertexColorLocation, 1.0f, (rand()%360)*glfwGetTime(), 0.0f, 1.0f);
+    // int vertexColorLocation = glGetUniformLocation(Program_ID, "ourColor");
+    // glUniform4f(vertexColorLocation, 1.0f, (rand()%360)*glfwGetTime(), 0.0f, 1.0f);
 }
 
 Shader::~Shader()
